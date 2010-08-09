@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#660000">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<TextView android:id="@+id/TextView06" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textStyle="bold"
+			android:text="@string/title" android:textSize="25sp"
+			android:paddingBottom="10sp" android:layout_gravity="center"></TextView>
+		<TextView android:text="@string/desc_abfahrtsbahnhof"
+			android:id="@+id/TextView01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></TextView>
+		<AutoCompleteTextView android:text="@+id/EditText01"
+			android:id="@+id/abfahrtsbahnhof" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:singleLine="true"
+			android:completionThreshold="3" android:maxLength="50" android:dropDownHeight="fill_parent"></AutoCompleteTextView>
+		<TextView android:text="@string/desc_zielbahnhof" android:id="@+id/TextView02"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<AutoCompleteTextView android:text="@+id/EditText02"
+			android:id="@+id/zielbahnhof" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:singleLine="true"
+			android:completionThreshold="3" android:maxLength="50" android:dropDownHeight="fill_parent"></AutoCompleteTextView>
+		<TextView android:text="@string/desc_name" android:id="@+id/TextView03"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		<EditText android:text="@+id/EditText03" android:id="@+id/name"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:singleLine="true" android:maxLength="50"></EditText>
+		<TableLayout android:id="@+id/TableLayout01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:stretchColumns="*" android:layout_gravity="center">
+			<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<TextView android:id="@+id/TextView04"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="@string/desc_erwachsene"></TextView>
+				<TextView android:id="@+id/TextView05"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="@string/desc_kinder"></TextView>
+				<TextView android:id="@+id/TextView04"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="@string/desc_klasse"></TextView>
+			</TableRow>
+			<TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<Spinner android:layout_height="wrap_content"
+					android:entries="@array/count_tickets" android:layout_width="wrap_content"
+					android:id="@+id/erwachsene"></Spinner>
+				<Spinner android:layout_height="wrap_content"
+					android:entries="@array/count_tickets" android:layout_width="wrap_content"
+					android:id="@+id/kinder"></Spinner>
+				<Spinner android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:entries="@array/count_klasse"
+					android:id="@+id/klasse"></Spinner>
+			</TableRow>
+		</TableLayout>
+		<Button android:text="@string/send" android:layout_height="wrap_content"
+			android:id="@+id/send_button" android:layout_marginTop="20px"
+			android:layout_width="fill_parent" android:textStyle="bold"
+			android:textColor="#aa0000"></Button>
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">SMS Ticket Österreich</string>
+	<string name="title">SMS Ticket Österreich</string>
+	<string name="about_text">Diese Software erstellt ein SMS zum Anfordern eines
+		ÖBB Handy Tickets. Der Versand des SMS muss anschliessend manuell
+		durchgeführt werden. Für weitere Informationen über das SMS Format
+		siehe http://tinyurl.com/oebbticket\n\nBeta software - use at your own
+		risk!\n\nContact: guenther@starnberger.name</string>
+	<string name="about_label">About</string>
+	<string name="about_title">SMS Ticket Generator</string>
+	<string name="swap_label">Start/Ziel vertauschen</string>
+	<string name="desc_abfahrtsbahnhof">Abfahrtsbahnhof:</string>
+	<string name="desc_zielbahnhof">Zielbahnhof:</string>
+	<string name="desc_name">Vor- und Nachname:</string>
+	<string name="send">SMS generieren und öffnen</string>
+	<string name="dest_sms_number">+4382820200</string>
+	<string name="swap">Start/Ziel vertauschen</string>
+	<string name="desc_erwachsene">Erwachsene:</string>
+	<string name="desc_kinder">Kinder:</string>
+	<string name="desc_klasse">Klasse:</string>
+	<string-array name="count_klasse">
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="count_tickets">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+</resources>
