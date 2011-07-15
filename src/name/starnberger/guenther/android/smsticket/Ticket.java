@@ -127,10 +127,10 @@ public class Ticket extends Activity implements View.OnClickListener {
 	}
 
 	private void genSms() {
-		String smsBody = "Zug " + abfahrtsbahnhof.getText() + " "
-				+ zielbahnhof.getText() + " " + name.getText() + " "
-				+ (String) erwachsene.getSelectedItem() + "Erw "
-				+ kinder.getSelectedItem() + "K " + klasse.getSelectedItem()
+		String smsBody = "Zug*" + abfahrtsbahnhof.getText() + "*"
+				+ zielbahnhof.getText() + "*" + name.getText() + "*"
+				+ (String) erwachsene.getSelectedItem() + "Erw*"
+				+ kinder.getSelectedItem() + "K*" + klasse.getSelectedItem()
 				+ ".KL";
 
 		if (smsBody.length() < MAX_SMS_LENGTH) {
